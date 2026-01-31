@@ -170,26 +170,14 @@ doc_events = {
 # ---------------
 
 scheduler_events = {
-	"daily_long": [
-		"crm.lead_syncing.background_sync.sync_leads_from_sources_daily"
-	],
-	"hourly_long": [
-		"crm.lead_syncing.background_sync.sync_leads_from_sources_hourly"
-	],
-	"monthly_long": [
-		"crm.lead_syncing.background_sync.sync_leads_from_sources_monthly"
-	],
-    "cron": {
-        "*/5 * * * *": [
-            "crm.lead_syncing.background_sync.sync_leads_from_sources_5_minutes"
-		],
-        "*/10 * * * *": [
-			"crm.lead_syncing.background_sync.sync_leads_from_sources_10_minutes"
-		],
-        "*/15 * * * *": [
-			"crm.lead_syncing.background_sync.sync_leads_from_sources_15_minutes"
-		],
-	}
+	"daily_long": ["crm.lead_syncing.background_sync.sync_leads_from_sources_daily"],
+	"hourly_long": ["crm.lead_syncing.background_sync.sync_leads_from_sources_hourly"],
+	"monthly_long": ["crm.lead_syncing.background_sync.sync_leads_from_sources_monthly"],
+	"cron": {
+		"*/5 * * * *": ["crm.lead_syncing.background_sync.sync_leads_from_sources_5_minutes"],
+		"*/10 * * * *": ["crm.lead_syncing.background_sync.sync_leads_from_sources_10_minutes"],
+		"*/15 * * * *": ["crm.lead_syncing.background_sync.sync_leads_from_sources_15_minutes"],
+	},
 }
 
 # Testing
@@ -261,7 +249,10 @@ ignore_links_on_delete = ["Failed Lead Sync Log"]
 # "crm.auth.validate"
 # ]
 
-after_migrate = ["crm.fcrm.doctype.fcrm_settings.fcrm_settings.after_migrate"]
+after_migrate = [
+	"crm.fcrm.doctype.fcrm_settings.fcrm_settings.after_migrate",
+	"crm.api.whatsapp.add_roles",
+]
 
 standard_dropdown_items = [
 	{

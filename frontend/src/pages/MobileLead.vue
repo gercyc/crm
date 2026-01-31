@@ -105,7 +105,7 @@
   <Dialog
     v-model="showConvertToDealModal"
     :options="{
-      title: __('Convert to Deal'),
+      title: __('Convert to deal'),
       size: 'xl',
       actions: [
         {
@@ -123,7 +123,7 @@
       </div>
       <div class="ml-6">
         <div class="flex items-center justify-between text-base">
-          <div>{{ __('Choose Existing') }}</div>
+          <div>{{ __('Choose existing') }}</div>
           <Switch v-model="existingOrganizationChecked" />
         </div>
         <Link
@@ -150,7 +150,7 @@
       </div>
       <div class="ml-6">
         <div class="flex items-center justify-between text-base">
-          <div>{{ __('Choose Existing') }}</div>
+          <div>{{ __('Choose existing') }}</div>
           <Switch v-model="existingContactChecked" />
         </div>
         <Link
@@ -206,13 +206,9 @@ import { globalStore } from '@/stores/global'
 import { statusesStore } from '@/stores/statuses'
 import { getMeta } from '@/stores/meta'
 import { useDocument } from '@/data/document'
-import {
-  whatsappEnabled,
-  callEnabled,
-  isMobileView,
-} from '@/composables/settings'
-import { capture } from '@/telemetry'
+import { whatsappEnabled, isMobileView } from '@/composables/settings'
 import { useActiveTabManager } from '@/composables/useActiveTabManager'
+import { useTelemetry } from 'frappe-ui/frappe'
 import {
   createResource,
   Dropdown,
@@ -230,6 +226,8 @@ const { brand } = getSettings()
 const { $dialog, $socket } = globalStore()
 const { statusOptions, getLeadStatus } = statusesStore()
 const { doctypeMeta } = getMeta('CRM Lead')
+const { capture } = useTelemetry()
+
 const route = useRoute()
 const router = useRouter()
 
