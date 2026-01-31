@@ -1281,7 +1281,7 @@ msgstr ""
 
 #: frontend/src/components/Layouts/AppSidebar.vue:107
 msgid "Collapse"
-msgstr ""
+msgstr "Esconder"
 
 #: frontend/src/components/FieldLayoutEditor.vue:344
 msgid "Collapsible"
@@ -1566,7 +1566,7 @@ msgstr ""
 
 #: frontend/src/components/Modals/DealModal.vue:8
 msgid "Create Deal"
-msgstr ""
+msgstr "Nova negociação"
 
 #: frontend/src/components/Modals/LeadModal.vue:8
 msgid "Create Lead"
@@ -1729,7 +1729,7 @@ msgstr ""
 #: frontend/src/components/Telephony/ExotelCallUI.vue:200
 #: frontend/src/pages/Tasks.vue:132
 msgid "Deal"
-msgstr ""
+msgstr "Negócio"
 
 #. Label of the deal_owner (Link) field in DocType 'CRM Deal'
 #: crm/fcrm/doctype/crm_deal/crm_deal.json
@@ -1771,7 +1771,7 @@ msgstr ""
 #: frontend/src/pages/MobileDeal.vue:386
 #: frontend/src/pages/MobileOrganization.vue:340
 msgid "Deals"
-msgstr ""
+msgstr "Negociações"
 
 #: crm/api/dashboard.py:818
 #: frontend/src/components/Dashboard/AddChartModal.vue:97
@@ -1781,21 +1781,21 @@ msgstr ""
 #: crm/api/dashboard.py:1124
 #: frontend/src/components/Dashboard/AddChartModal.vue:100
 msgid "Deals by salesperson"
-msgstr ""
+msgstr "Negociações por vendedor"
 
 #: crm/api/dashboard.py:1018
 #: frontend/src/components/Dashboard/AddChartModal.vue:107
-msgid "Deals by source"
+msgid "Negociações por origem"
 msgstr ""
 
 #: crm/api/dashboard.py:871
 #: frontend/src/components/Dashboard/AddChartModal.vue:105
-msgid "Deals by stage"
+msgid "Negociações por estagio"
 msgstr ""
 
 #: crm/api/dashboard.py:1064
 #: frontend/src/components/Dashboard/AddChartModal.vue:99
-msgid "Deals by territory"
+msgid "Negociações por território"
 msgstr ""
 
 #: frontend/src/components/Settings/EmailTemplate/EditEmailTemplate.vue:112
